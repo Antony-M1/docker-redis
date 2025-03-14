@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/b8c5ec3a-be86-426e-984d-a97b9c538c9d)
+
 # [Redis](https://redis.io/docs/latest/)
 Redis is an open-source, in-memory data structure store, commonly used as a database, cache, or message broker, known for its speed and efficiency due to storing data in RAM
 
