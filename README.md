@@ -62,10 +62,7 @@ Go To: [localhost:5540](http://localhost:5540)
 
 Use the below commands to access the redis cli from the docker container.
 ```
-docker exec -it redis bash
-```
-```
-redis-cli
+docker exec -it redis-stack redis-cli
 ```
 
 <details>
