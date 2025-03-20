@@ -3,6 +3,10 @@
 # [Redis](https://redis.io/docs/latest/)
 Redis is an open-source, in-memory data structure store, commonly used as a database, cache, or message broker, known for its speed and efficiency due to storing data in RAM
 
+The name **Redis** stands for **"`Re`mote `Di`ctionary `S`erver"** because it was originally designed as a fast, in-memory key-value store that behaves like a dictionary (hash map).  
+
+It was created by **Salvatore Sanfilippo** in 2009 to improve performance in his own projects but later became a widely used **NoSQL database**, supporting various data structures like strings, lists, sets, and more.
+
 ### Key Characteristics:
 
 - **In-Memory Data Store:**
@@ -28,9 +32,9 @@ Redis is an open-source, in-memory data structure store, commonly used as a data
 - `Content Delivery Networks (CDNs)`: Storing cached content for faster delivery to users.
 
 
-# Quick Start | Docker
+# [Quick Start | Docker](https://redis.io/docs/latest/operate/oss_and_stack/install/install-stack/docker/)
 
-Before running the docker the below commands ensure that docker is installed and running in your machine 
+Ensure the docker is installed in your machine. For more info about the [redis-stack](https://hub.docker.com/r/redis/redis-stack). 
 
 ### Step 1 : Clone The Repo
 
@@ -50,4 +54,41 @@ docker compose up -d
 Go To: [localhost:5540](http://localhost:5540)
 
 ## Notes
- There are two components in the `docker-compose.yml` file. One is **Redis**, which is running on port `6379`, and the other is **RedisInsight**, a GUI for Redis, which is running at [localhost:5540](http://localhost:5540).
+ There are two components in the `docker-compose.yml` file. One is **Redis**, which is running on port `6379`, and the other is **RedisInsight**, a GUI for Redis, which is running at [localhost:8001](http://localhost:8001).
+
+## [Redis CLI](https://redis.io/docs/latest/develop/tools/cli/)
+- Overview of redis-cli, the Redis command line interface
+- In interactive mode, redis-cli has basic line editing capabilities to provide a familiar typing experience.
+
+Use the below commands to access the redis cli from the docker container.
+```
+docker exec -it redis bash
+```
+```
+redis-cli
+```
+
+<details>
+    <summary><b>Some sample commands to use in the redis-cli</b></summary>
+
+To Select the database
+```
+SELECT 0
+```
+
+To set the information in the redis database
+
+Syntax: `SET <KEY> <VALUE>`
+```
+SET name "John Doe"
+```
+
+To Get the information
+
+Syntax: `GET <KEY>`
+```
+GET name
+```
+</details>
+
+
