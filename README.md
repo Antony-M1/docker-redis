@@ -7,6 +7,9 @@ The name **Redis** stands for **"`Re`mote `Di`ctionary `S`erver"** because it wa
 
 It was created by **Salvatore Sanfilippo** in 2009 to improve performance in his own projects but later became a widely used **NoSQL database**, supporting various data structures like strings, lists, sets, and more.
 
+**Reference Video**
+- [Redis | Cache Aside Pattern | Parottasalna | Tamil - 15 Min Video](https://www.youtube.com/watch?v=tf46FmXho6w)
+
 ### Key Characteristics:
 
 - **In-Memory Data Store:**

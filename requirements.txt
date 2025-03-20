@@ -1,0 +1,6 @@
+pymongo==4.11.3
+Faker==37.0.2
+fastapi[standard]==0.115.11
+uvicorn[standard]==0.34.0
+redis[hiredis]==5.2.1
+locust==2.33.2
